@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Formulario from "../components/Formulario";
 
 const NuevoCliente = () => {
     const navigate = useNavigate();
@@ -23,7 +24,14 @@ const NuevoCliente = () => {
             </div>
 
             <div className="bg-white rounded-lg shadow md:w-3/4 mx-auto px-5 py-10 mt-7">
-                Formulario aquí
+                <form>
+                    <Formulario/>
+                    <input 
+                        type="submit" 
+                        value="Agregar" 
+                        className="mt-5 w-full bg-blue-600 hover:bg-blue-700 rounded-lg p-1 uppercase font-semibold text-lg text-white cursor-pointer transition-colors duration-150" 
+                    />
+                </form>
             </div>
         
         </>
