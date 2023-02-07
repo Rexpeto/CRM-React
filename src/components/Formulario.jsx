@@ -7,7 +7,7 @@ const Formulario = ({cliente}) => {
                     type="text" 
                     id="nombre" 
                     placeholder="Coloque el nombre"
-                    className="mt-4 block w-full p-3 bg-gray-50"
+                    className="mt-4 block w-full p-3 bg-gray-50 outline-none"
                 />
             </div>
 
@@ -17,7 +17,7 @@ const Formulario = ({cliente}) => {
                     type="text" 
                     id="empresa" 
                     placeholder="Coloque la empresa"
-                    className="mt-4 block w-full p-3 bg-gray-50"
+                    className="mt-4 block w-full p-3 bg-gray-50 outline-none"
                 />
             </div>
 
@@ -27,7 +27,7 @@ const Formulario = ({cliente}) => {
                     type="email" 
                     id="email" 
                     placeholder="Correo electronico"
-                    className="mt-4 block w-full p-3 bg-gray-50"
+                    className="mt-4 block w-full p-3 bg-gray-50 outline-none"
                 />
             </div>
             
@@ -37,7 +37,7 @@ const Formulario = ({cliente}) => {
                     type="tel" 
                     id="tel" 
                     placeholder="Correo electronico"
-                    className="mt-4 block w-full p-3 bg-gray-50"
+                    className="mt-4 block w-full p-3 bg-gray-50 outline-none"
                 />
             </div>
 
@@ -47,7 +47,7 @@ const Formulario = ({cliente}) => {
                     id="notas"
                     as="textarea"
                     type="text"
-                    className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self"
+                    className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self outline-none"
                     placeholder="Notas de Cliente"
                 ></textarea>
             </div>
