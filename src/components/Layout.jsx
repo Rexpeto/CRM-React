@@ -14,7 +14,7 @@ const Layout = () => {
                     <Link to="/clientes/nuevo" className={`text-lg block mt-2  hover:text-blue-100 hover:bg-blue-800 py-2 px-3 rounded-lg ${location.pathname === '/clientes/nuevo' ? 'text-blue-100 bg-blue-800' : 'text-white'} transition-all duration-150`}>Nuevo Cliente</Link>
                 </nav>
             </div>
-            <main className="md:w-3/4 p-10 md:h-screen overflow-scroll">
+            <main className="md:w-full p-10 md:h-screen overflow-scroll">
                 <Outlet/>
             </main>
         </div>
