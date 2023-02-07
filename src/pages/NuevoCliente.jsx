@@ -1,11 +1,40 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Form, useActionData } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import Formulario from "../components/Formulario";
+import 'react-toastify/dist/ReactToastify.css'
+
+export const action = async ({request}) => {
+    const formData = await request.formData();
+    const datos = Object.fromEntries(formData);
+
+    //? Validación
+    const errores = [];
+
+    if(Object.values(datos).includes('')) {
+        errores.push('Todos los campos son obligatorios');
+    }
+
+    //? Retornar errores
+    if(Object.keys(errores).length) {
+        return errores;
+    }
+
+    return null
+}
 
 const NuevoCliente = () => {
+    const errores = useActionData();
     const navigate = useNavigate();
 
+    if(errores?.length) {
+        errores.map(error => {
+            toast.error(error);
+        })
+    }
+    
     return ( 
         <>
+            <ToastContainer/>
             <div className="flex justify-between">
                 <div>
                     <h1 className="font-black text-4xl text-blue-900">Nuevo Cliente</h1>
@@ -24,14 +53,14 @@ const NuevoCliente = () => {
             </div>
 
             <div className="bg-white rounded-lg shadow md:w-3/4 mx-auto px-5 py-10 mt-7">
-                <form>
+                <Form method="post" action="/clientes/nuevo">
                     <Formulario/>
                     <input 
                         type="submit" 
                         value="Agregar" 
                         className="mt-5 w-full bg-blue-600 hover:bg-blue-700 rounded-lg p-1 uppercase font-semibold text-lg text-white cursor-pointer transition-colors duration-150" 
                     />
-                </form>
+                </Form>
             </div>
         
         </>
