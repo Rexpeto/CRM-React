@@ -1,0 +1,44 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nombre": "Carlos",
+            "apellido": "Gallardo",
+            "telefono": 4146938479,
+            "email": "Carlos@correo.com",
+            "empresa": "Airtek"
+        },
+        {
+            "id": 2,
+            "nombre": "Eliot",
+            "apellido": "Soto",
+            "telefono": 4146938479,
+            "email": "Elio@correo.com",
+            "empresa": "Airtek"
+        },
+        {
+            "id": 3,
+            "nombre": "Ricardo",
+            "apellido": "Soto",
+            "telefono": 4146938479,
+            "email": "Ricardo@correo.com",
+            "empresa": "Airtek"
+        },
+        {
+            "id": 4,
+            "nombre": "Jean",
+            "apellido": "Parra",
+            "telefono": 4146938479,
+            "email": "Jean@correo.com",
+            "empresa": "Airtek"
+        },
+        {
+            "id": 5,
+            "nombre": "Jorge",
+            "apellido": "Parra",
+            "telefono": 4146938479,
+            "email": "Jorge@correo.com",
+            "empresa": "Airtek"
+        }
+    ]
+}
