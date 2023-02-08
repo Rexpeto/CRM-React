@@ -2,9 +2,8 @@ import axios from "axios";
 
 export const obtenerClientes = async () => {
     try {
-        const respuesta = await fetch(`${import.meta.env.VITE_API_URL}/clientes`);
-        const resultado = await respuesta.json();
-        return resultado;
+        const respuesta = await axios(`${import.meta.env.VITE_API_URL}/clientes`);
+        return respuesta.data;
     } catch (error) {
         console.log(error);
     }
@@ -12,16 +11,13 @@ export const obtenerClientes = async () => {
 
 export const agregarClientes = async datos => {
     try {
-        const respuesta = await fetch(`${import.meta.env.VITE_API_URL}/clientes`, {
+        const respuesta = await axios({
             method: 'POST',
-            body: JSON.stringify(datos),
-            headers: {
-                'Content-Types': 'application/json'
-            }
+            url: `${import.meta.env.VITE_API_URL}/clientes`,
+            data: datos
         });
 
-        await respuesta.json();
-
+        return respuesta.data
     } catch (error) {
         console.log(error)
     }
