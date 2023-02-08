@@ -1,6 +1,7 @@
-import { useNavigate, Form, useActionData } from "react-router-dom";
+import { useNavigate, Form, useActionData, redirect } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import Formulario from "../components/Formulario";
+import { agregarClientes } from "../data/clientes";
 import 'react-toastify/dist/ReactToastify.css'
 
 export const action = async ({request}) => {
@@ -26,7 +27,9 @@ export const action = async ({request}) => {
         return errores;
     }
 
-    return null
+    await agregarClientes(datos);
+
+    return redirect('/');
 }
 
 const NuevoCliente = () => {
