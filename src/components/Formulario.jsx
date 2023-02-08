@@ -39,7 +39,7 @@ const Formulario = ({cliente}) => {
                 <input 
                     type="tel" 
                     id="tel" 
-                    name="tel"
+                    name="telefono"
                     placeholder="Correo electronico"
                     className="mt-4 block w-full p-3 bg-gray-50 outline-none"
                 />
