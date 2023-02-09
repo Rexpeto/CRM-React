@@ -40,3 +40,13 @@ export const editarCliente = async (id, datos) => {
         console.log(error);
     }
 }
+
+export const eliminarCliente = async id => {
+    try {
+        const respuesta = await axios.delete(`${import.meta.env.VITE_API_URL}/clientes/${id}`);
+
+        return respuesta.data
+    } catch (error) {
+        console.log(error);
+    }
+}
