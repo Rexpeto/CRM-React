@@ -31,3 +31,12 @@ export const agregarClientes = async datos => {
         console.log(error)
     }
 }
+
+export const editarCliente = async (id, datos) => {
+    try {
+        const respuesta = await axios.put(`${import.meta.env.VITE_API_URL}/clientes/${id}`, datos);
+        return respuesta.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
