@@ -1,46 +1,51 @@
 {
   "clientes": [
     {
-      "id": 1,
       "nombre": "Carlos",
-      "telefono": 4146938479,
+      "empresa": "Airtek",
       "email": "Carlos@correo.com",
-      "empresa": "Airtek"
+      "telefono": "4146938479",
+      "notas": "Solo trabaja y come",
+      "id": 1
     },
     {
       "id": 2,
       "nombre": "Eliot",
       "telefono": 4146938479,
       "email": "Elio@correo.com",
-      "empresa": "Airtek"
+      "empresa": "Airtek",
+      "notas": "Solo trabaja"
     },
     {
       "id": 3,
       "nombre": "Ricardo",
       "telefono": 4146938479,
       "email": "Ricardo@correo.com",
-      "empresa": "Airtek"
+      "empresa": "Airtek",
+      "notas": "Solo trabaja"
     },
     {
       "id": 4,
       "nombre": "Jean",
       "telefono": 4146938479,
       "email": "Jean@correo.com",
-      "empresa": "Airtek"
+      "empresa": "Airtek",
+      "notas": "Solo trabaja"
     },
     {
       "id": 5,
       "nombre": "Jorge",
       "telefono": 4146938479,
       "email": "Jorge@correo.com",
-      "empresa": "Airtek"
+      "empresa": "Airtek",
+      "notas": "Solo trabaja"
     },
     {
       "nombre": "Rexpeto",
       "empresa": "Vypers",
       "email": "Carlos@vypers.com",
       "telefono": "04146938479",
-      "notas": "Trabaja en vypers",
+      "notas": "Trabaja en vypers como developer fullstack",
       "id": 6
     }
   ]
